@@ -6,3 +6,5 @@ Alloy9/bin/
 Alloy9/App_Data/Index/
 Alloy9/obj/
 *.log
+Alloy9/App_Data/DefaultSiteContent.episerverdata
+Alloy9/App_Data/GeoLiteCity.dat
