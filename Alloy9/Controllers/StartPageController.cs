@@ -1,6 +1,9 @@
 using System.Web.Mvc;
 using Alloy9.Models.Pages;
 using Alloy9.Models.ViewModels;
+using EPiServer.DataAbstraction;
+using EPiServer.Framework.Localization;
+using EPiServer.ServiceLocation;
 using EPiServer.Web;
 using EPiServer.Web.Mvc;
 
@@ -23,8 +26,15 @@ namespace Alloy9.Controllers
                 editHints.AddConnection(m => m.Layout.CustomerZonePages, p => p.CustomerZonePageLinks);
             }
 
+            Tests();
+
             return View(model);
         }
 
+        private void Tests()
+        {
+            var i1 = ServiceLocator.Current.GetInstance<ILanguageBranchRepository>();
+            var i2 = ServiceLocator.Current.GetInstance<LocalizationService>();
+        }
     }
 }

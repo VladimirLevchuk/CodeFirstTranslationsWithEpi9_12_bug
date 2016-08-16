@@ -1,4 +1,8 @@
 @using Alloy9
 @model PageViewModel<Alloy9.Models.Pages.StartPage>
 
+<h2>@Html.Translation(x => x.FirstTranslation)</h2>
+
 @Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row equal-height", tag = Global.ContentAreaTags.FullWidth })
+
+
