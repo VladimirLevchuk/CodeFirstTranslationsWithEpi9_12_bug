@@ -1,0 +1,8 @@
+*.suo
+packages/
+Alloy9/bin/
+.vs/
+*.user
+Alloy9/App_Data/Index/
+Alloy9/obj/
+*.log
